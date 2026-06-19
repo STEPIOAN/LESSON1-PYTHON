@@ -19,8 +19,38 @@ binary files: image
 | Binary Mode(Write) = wb |
 | Binary Mode(append) = ab |
 
+## SAVE USERNAME
 ```python
+username = input("Enter your username:")
+with open("user.txt", "w") as file:
+    file.write(username)
+print("Username saved!")
 ```
+Output
+```python
+Enter your username: (write any username)
+Username saved!
+```
+## Save High Scores
+```python
+high_score = input("Enter your score: ")
+
+with open("game_scores.txt", "a") as file:
+    file.write(high_score + "\n")
+
+print("Score saved!")
+```
+## game_scores.txt
+```python
+220
+100
+440
+```
+
+
+
+
+
 
 
 
